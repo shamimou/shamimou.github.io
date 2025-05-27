@@ -1,0 +1,20 @@
+{{ if .Ancestors }}
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    {{ range .Ancestors.Reverse }}
+    {{ if .Parent}}
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="{{ .RelPermalink }}" itemprop="item"><span itemprop="name">{{ .Title }}</span></a>
+    </li>
+    <span class="sep">»</span>
+    {{else}}
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="{{ .RelPermalink }}" itemprop="item"><span itemprop="name">Home</span></a>
+    </li>
+    <span class="sep">»</span>
+    {{end}}
+    {{ end }}
+    <li class="current">{{ .Title }}</li>
+  </ol>
+</nav>
+{{ end }}

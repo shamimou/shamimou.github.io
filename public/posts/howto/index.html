@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/main.css">
+    
+  
+
+
+
+<link rel="stylesheet" href="/css/academicons.css">
+
+
+<meta http-equiv="cleartype" content="on">
+<title>
+  DTNOU - Site - Step By Step Using This Template
+</title>
+
+</head>
+<body>
+  <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:1313/">DTNOU - Site</a></li>
+          
+          <li class="masthead__menu-item"><a href="/cv/">CV / About Me</a></li>
+          
+          <li class="masthead__menu-item"><a href=""></a></li>
+          
+          <li class="masthead__menu-item"><a href="/posts/">Posts</a></li>
+          
+          <li class="masthead__menu-item"><a href="/posts/howto/">Step By Step Using This Template</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    
+    
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+    </li>
+    <span class="sep">»</span>
+    
+    
+    
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="/posts/" itemprop="item"><span itemprop="name">Posts</span></a>
+    </li>
+    <span class="sep">»</span>
+    
+    
+    <li class="current">Step By Step Using This Template</li>
+  </ol>
+</nav>
+
+
+<div id="main" role="main">
+  <div class="sidebar sticky">
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    
+    <img src="/images/profile.png" alt="DTN OU">
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">DTN OU</h3>
+    
+    <p class="author__bio">PhD Students at Okayama University</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Japan</li>
+      
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>Okayama University</li>
+      
+      
+        <li><a href="https://dtn-ou.gitlab.io" target="_blank"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>https://dtn-ou.gitlab.io</a></li>
+      
+      
+        <li><a href="mailto:mpranata@s.okayama-u.ac.jp"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>mpranata@s.okayama-u.ac.jp</a></li>
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+        <li><a href="https://gitlab.com/dtn-ou" target="_blank"><i class="fab fa-fw fa-gitlab icon-pad-right" aria-hidden="true"></i>dtn-ou</a></li>
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  </div>
+
+  
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  <meta itemprop="headline" content="Step By Step Using This Template">
+  <div class="page__inner-wrap">
+      <header>
+        <h1 class="page__title" itemprop="headline">Step By Step Using This Template</h1>
+      </header>
+
+    <section class="page__content" itemprop="text">
+      <h2 id="installing-gohugo">Installing gohugo</h2>
+<p>To install gohugo, please follow this <a href="https://gohugo.io/installation/">link</a>.</p>
+<h2 id="create-new-hugo-project">Create new hugo project</h2>
+<div class="highlight">
+    
+    <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site dtnou.gitlab.io</span></span></code></pre></div>
+</div>
+<p>Create new Hugo Site.</p>
+<h2 id="clone-the-themes">Clone the themes</h2>
+<div class="highlight">
+    
+    <pre tabindex="0"><code class="language-git" data-lang="git">git submodule add https://gitlab.com/dtn-ou/dtnou-hugo.git themes/dtnou-hugo</code></pre>
+</div>
+<p>if error :</p>
+<div class="highlight">
+    
+    <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>The following paths are ignored by one of your .gitignore files:
+</span></span><span style="display:flex;"><span>themes
+</span></span><span style="display:flex;"><span>themes/dtnou-hugo
+</span></span><span style="display:flex;"><span>hint: Use -f <span style="color:#007020;font-weight:bold">if</span> you really want to add them.
+</span></span><span style="display:flex;"><span>hint: Disable this message with <span style="color:#4070a0">&#34;git config set advice.addIgnoredFile false&#34;</span></span></span></code></pre></div>
+</div>
+<p>add force (-f)</p>
+<div class="highlight">
+    
+    <pre tabindex="0"><code class="language-git" data-lang="git">git submodule add -f https://gitlab.com/dtn-ou/dtnou-hugo.git themes/dtnou-hugo</code></pre>
+</div>
+<h2 id="hugoyaml-configuration-file">hugo.yaml Configuration file</h2>
+<p>This gohugo using <code>hugo.yaml</code>, the config file can be toml and json. This full example of the <code>hugo.yaml</code>.</p>
+<div class="highlight">
+    
+    <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#062873;font-weight:bold">baseURL</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;https://example.org/&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#062873;font-weight:bold">languageCode</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;en-us&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#062873;font-weight:bold">title</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;My New Hugo Site&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#062873;font-weight:bold">theme</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;dtnou-hugo&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#062873;font-weight:bold">markup</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#062873;font-weight:bold">highlight</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">style</span>:<span style="color:#bbb"> </span>friendly<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#062873;font-weight:bold">menus</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#062873;font-weight:bold">main</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>- <span style="color:#062873;font-weight:bold">name</span>:<span style="color:#bbb"> </span>CV<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#062873;font-weight:bold">pageRef</span>:<span style="color:#bbb"> </span>/cv<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#062873;font-weight:bold">weight</span>:<span style="color:#bbb"> </span><span style="color:#40a070">10</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>- <span style="color:#062873;font-weight:bold">name</span>:<span style="color:#bbb"> </span>Publications<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#062873;font-weight:bold">pageRef</span>:<span style="color:#bbb"> </span>/publications<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#062873;font-weight:bold">weight</span>:<span style="color:#bbb"> </span><span style="color:#40a070">20</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>- <span style="color:#062873;font-weight:bold">name</span>:<span style="color:#bbb"> </span>Posts<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#062873;font-weight:bold">pageRef</span>:<span style="color:#bbb"> </span>/posts/<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#062873;font-weight:bold">weight</span>:<span style="color:#bbb"> </span><span style="color:#40a070">30</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>- <span style="color:#062873;font-weight:bold">name</span>:<span style="color:#bbb"> </span>Use This template<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#062873;font-weight:bold">pageRef</span>:<span style="color:#bbb"> </span>/posts/howto<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#062873;font-weight:bold">weight</span>:<span style="color:#bbb"> </span><span style="color:#40a070">40</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#062873;font-weight:bold">params</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#062873;font-weight:bold">author</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">name</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;DTN OU&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">location</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;Japan&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#pronouns:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">bio</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;PhD Students at Okayama University&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">employer</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;Okayama University&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#picture: &#39;profile.png&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">site</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;https://dtn-ou.gitlab.io&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">mail</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;mpranata@s.okayama-u.ac.jp&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic"># Full Link</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">google_scholar</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;https://scholar.google.com/citations?user=000000000000&amp;hl=en&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">scopus</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;https://www.scopus.com/authid/detail.uri?authorId=00000000000&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#arxiv:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#orcid:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#semantic:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#impactstory:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#pubmed:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#researchgate:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#mastodon:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#medium:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic"># Username</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#bitbucket:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#codepen:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#dribbble:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#github: &#39;mgpnata&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#062873;font-weight:bold">gitlab</span>:<span style="color:#bbb"> </span><span style="color:#4070a0">&#39;dtn-ou&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#kaggle:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#stackoverflow:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#bluesky:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#facebook:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#flickr:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#foursquare:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#goodreads:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#google_plus:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#keybase:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#instagram:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#lastfm:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#linkedin:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#pinterest:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#soundcloud:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#steam:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#telegram:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#tumblr:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#twitter:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#vine:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#weibo:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#wikipedia:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#xing:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#youtube:</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#60a0b0;font-style:italic">#zhihu:</span></span></span></code></pre></div>
+</div>
+<h3 id="change-photo">Change Photo</h3>
+<p>To change photo profile, put the photo on the <code>static/images/</code> directory, and write the name of the file on the <code>picture</code> on the configuration file.</p>
+<h2 id="setup-the-home-page">Setup the home page</h2>
+<p>The home page of this theme used the <code>_index.md</code> on the content directory. Edit the file, and put your information.</p>
+<div class="highlight">
+    
+    <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>date: &#34;2025-03-11T12:00:00+09:00&#34;
+</span></span><span style="display:flex;"><span>draft: false
+</span></span><span style="display:flex;"><span>title: DTN-OU
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>[<span style="color:#062873;font-weight:bold">DTN-OU</span>](<span style="color:#4070a0">https://gitlab.com/dtn-ou/dtn7</span>) is fork from [<span style="color:#062873;font-weight:bold">DTN7</span>](<span style="color:#4070a0">https://dtn7.github.io</span>), with focus on securing the transmission on the DTN7-Go. For the first implementation, we use AES-128 bit for securing the bundle payload. The key of each node saved on the configuration file.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#800080;font-weight:bold">## Step by Step using this template
+</span></span></span><span style="display:flex;"><span><span style="color:#800080;font-weight:bold"></span>To use this template, follow [<span style="color:#062873;font-weight:bold">this link</span>](<span style="color:#4070a0">http://localhost:1313/posts/howto/</span>).</span></span></code></pre></div>
+</div>
+<h2 id="setup-the-cv-page">Setup the CV page</h2>
+<p>The CV page using standard Markdown. Create <code>cv.md</code> on the content directory, put <code>url: cv</code> and <code>layout: cv</code> as params.</p>
+<div class="highlight">
+    
+    <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: CV / About Me
+</span></span><span style="display:flex;"><span>url: cv
+</span></span><span style="display:flex;"><span>layout: cv
+</span></span><span style="display:flex;"><span>draft: false
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"># Academics
+</span></span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"></span><span style="color:#007020;font-weight:bold">-</span> Phd Students at Okayama Unviersity
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">-</span> Master at Master University
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">-</span> Bsc at Bsc University
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"># Work experience
+</span></span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"></span><span style="color:#007020;font-weight:bold">-</span> xxx
+</span></span><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">-</span> yyy
+</span></span><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">-</span> zzz
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">-</span> xx1
+</span></span><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">-</span> yy1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"># Skills
+</span></span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"></span><span style="color:#007020;font-weight:bold">-</span> Skill 1
+</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">-</span> Skill 2
+</span></span><span style="display:flex;"><span>  - Sub Skill</span></span></code></pre></div>
+</div>
+<h2 id="setup-the-publications-page">Setup the Publications page</h2>
+<p>This publications page use specific format. To make it easy, just copy the bibtex and make small change to use the format. Create <code>publications.md</code> on the content directory.</p>
+<div class="highlight">
+    
+    <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: Publications
+</span></span><span style="display:flex;"><span>url: publications
+</span></span><span style="display:flex;"><span>layout: publications
+</span></span><span style="display:flex;"><span>draft: false
+</span></span><span style="display:flex;"><span>journals:
+</span></span><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">-</span>
+</span></span><span style="display:flex;"><span>    title: &#39;All about Delay-Tolerant Networking (DTN) Contributions to Future Internet&#39;
+</span></span><span style="display:flex;"><span>    author:
+</span></span><span style="display:flex;"><span>      <span style="color:#007020;font-weight:bold">-</span> &#39;**Author 1**&#39;
+</span></span><span style="display:flex;"><span>      <span style="color:#007020;font-weight:bold">-</span> &#39;Author 2&#39;
+</span></span><span style="display:flex;"><span>      <span style="color:#007020;font-weight:bold">-</span> &#39;Author 3&#39;
+</span></span><span style="display:flex;"><span>    journal: &#39;Future Internet&#39;
+</span></span><span style="display:flex;"><span>    volume: 16
+</span></span><span style="display:flex;"><span>    issue: 4
+</span></span><span style="display:flex;"><span>    pages: 129
+</span></span><span style="display:flex;"><span>    year: 2024
+</span></span><span style="display:flex;"><span>    doi: &#39;https://doi.org&#39;
+</span></span><span style="display:flex;"><span>    link: &#39;https://www.mdpi.com/1999-5903/16/4/129&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>conferences:
+</span></span><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">-</span>
+</span></span><span style="display:flex;"><span>    title: &#39;DTN7: An Open-Source Disruption-Tolerant Networking Implementation of Bundle Protocol 7&#39;
+</span></span><span style="display:flex;"><span>    author:
+</span></span><span style="display:flex;"><span>      <span style="color:#007020;font-weight:bold">-</span> &#39;**Author 1**&#39;
+</span></span><span style="display:flex;"><span>      <span style="color:#007020;font-weight:bold">-</span> &#39;Author 2&#39;
+</span></span><span style="display:flex;"><span>      <span style="color:#007020;font-weight:bold">-</span> &#39;Author 3&#39;
+</span></span><span style="display:flex;"><span>    conference: &#39;18th International Conference on Ad-Hoc Networks and Wireless, ADHOC-NOW 2019&#39;
+</span></span><span style="display:flex;"><span>    location: &#39;Luxembourg,Luxembourg&#39;
+</span></span><span style="display:flex;"><span>    pages: &#39;196-209&#39;
+</span></span><span style="display:flex;"><span>    year: &#39;2019&#39;
+</span></span><span style="display:flex;"><span>    doi: &#39;https://doi.org&#39;
+</span></span><span style="display:flex;"><span>    link: &#39;https://link.springer.com/10.1007/978-3-030-31831-4_14&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>domesticjournals:
+</span></span><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">-</span>
+</span></span><span style="display:flex;"><span>    title: &#39;Title Journal 2&#39;
+</span></span><span style="display:flex;"><span>    author:
+</span></span><span style="display:flex;"><span>      <span style="color:#007020;font-weight:bold">-</span> &#39;**Author 1**&#39;
+</span></span><span style="display:flex;"><span>    journal: &#39;Journal&#39;
+</span></span><span style="display:flex;"><span>    volume:
+</span></span><span style="display:flex;"><span>    issue:
+</span></span><span style="display:flex;"><span>    pages:
+</span></span><span style="display:flex;"><span>    year:
+</span></span><span style="display:flex;"><span>    doi: &#39;https://doi.org&#39;
+</span></span><span style="display:flex;"><span>    link: &#39;doi&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>domesticconferences:
+</span></span><span style="display:flex;"><span>  <span style="color:#007020;font-weight:bold">-</span>
+</span></span><span style="display:flex;"><span>    title: &#39;Artikel Jurnal 1&#39;
+</span></span><span style="display:flex;"><span>    author:
+</span></span><span style="display:flex;"><span>      <span style="color:#007020;font-weight:bold">-</span> &#39;**Author 1**&#39;
+</span></span><span style="display:flex;"><span>    conference: &#39;Journal&#39;
+</span></span><span style="display:flex;"><span>    location: &#39;&#39;
+</span></span><span style="display:flex;"><span>    pages: &#39;&#39;
+</span></span><span style="display:flex;"><span>    year: &#39;&#39;
+</span></span><span style="display:flex;"><span>    doi: &#39;https://doi.org&#39;
+</span></span><span style="display:flex;"><span>    link: &#39;doi&#39;
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div>
+</div>
+<h2 id="deploy-to-gitlab-pages--github-pages">Deploy to GitLab Pages / Github Pages</h2>
+<p>To Deploy on GitLab, follow <a href="https://docs.gitlab.com/tutorials/hugo/">this</a> or <a href="https://gohugo.io/host-and-deploy/host-on-gitlab-pages/">this</a>. To Deploy on GitHub, follow <a href="https://gohugo.io/host-and-deploy/host-on-github-pages/">this</a>.</p>
+<h3 id="gitlab-ciyml">.gitlab-ci.yml</h3>
+<div class="highlight">
+    
+    <pre tabindex="0"><code class="language-gitlab" data-lang="gitlab">default:
+  image: &#34;${CI_TEMPLATE_REGISTRY_HOST}/pages/hugo/hugo_extended:latest&#34;
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+test:  # builds and tests your site
+  script:
+    - git submodule update --recursive --remote
+    - hugo
+  rules:
+    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+
+deploy-pages:  # a user-defined job that builds your pages and saves them to the specified path.
+  script:
+    - git submodule update --recursive --remote
+    - hugo
+  pages: true  # specifies that this is a Pages job
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment: production</code></pre>
+</div>
+
+    </section>
+    <footer class="page__meta">
+      <div class="page__footer-copyright">
+  &copy; 2025. <a href="https://dtn-ou.gitlab.io" target="_blank"> DTN OU </a>. Powered By <a href="https://gohugo.io" target="_
+    ">Hugo </a>. Themes from <a href="https://github.com/academicpages/academicpages.github.io" target="_blank">AcademicPages</a>
+</div>
+
+    </footer>
+  </div>
+</article>
+
+</div>
+
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ]
+    });
+  });
+</script>
+
+
+<script src="/js/copy-code.js"></script>
+<script src="/js/main.min.js"></script>
+<script src="/js/collapse.js"></script>
+
+</body>
+</html>

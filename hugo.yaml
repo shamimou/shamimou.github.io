@@ -1,0 +1,80 @@
+baseURL: 'https://dtn-ou.gitlab.io'
+languageCode: 'en-us'
+title: 'DTNOU - Site'
+theme: 'dtnou-hugo'
+
+markup:
+  highlight:
+    style: friendly
+
+menus:
+  main:
+    - name: CV
+      pageRef: /cv
+      weight: 10
+    - name: Publications
+      pageRef: /publications
+      weight: 20
+    - name: Research
+      pageRef: /research
+      weight: 30
+    - name: Posts
+      pageRef: /posts/
+      weight: 40
+    - name: Use This template
+      pageRef: /posts/howto
+      weight: 50
+
+
+params:
+  author:
+    name: 'DTN OU'
+    location: 'Japan'
+    #pronouns:
+    bio: "PhD Students at Okayama University"
+    employer: 'Okayama University'
+    #picture: 'profile.png'
+    site: 'https://dtn-ou.gitlab.io'
+    mail: 'mpranata@s.okayama-u.ac.jp'
+    # Full Link
+    # google_scholar: 'https://scholar.google.com/citations?user=000000000000&hl=en'
+    # scopus: 'https://www.scopus.com/authid/detail.uri?authorId=00000000000'
+    #arxiv:
+    #orcid:
+    #semantic:
+    #impactstory:
+    #pubmed:
+    #researchgate:
+    #mastodon:
+    #medium:
+
+    # Username
+    #bitbucket:
+    #codepen:
+    #dribbble:
+    #github: 'mgpnata'
+    gitlab: 'dtn-ou'
+    #kaggle:
+    #stackoverflow:
+    #bluesky:
+    #facebook:
+    #flickr:
+    #foursquare:
+    #goodreads:
+    #google_plus:
+    #keybase:
+    #instagram:
+    #lastfm:
+    #linkedin:
+    #pinterest:
+    #soundcloud:
+    #steam:
+    #telegram:
+    #tumblr:
+    #twitter:
+    #vine:
+    #weibo:
+    #wikipedia:
+    #xing:
+    #youtube:
+    #zhihu:

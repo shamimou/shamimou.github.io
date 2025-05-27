@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  {{ with .Title }}<meta itemprop="headline" content="{{ . | markdownify }}">{{end}}
+  <div class="page__inner-wrap">
+      <header>
+        {{ with .Title }}<h1 class="page__title" itemprop="headline">{{.}}</h1>{{end}}
+      </header>
+
+    <section class="page__content" itemprop="text">
+      {{ .Content }}
+      {{ $pages := where site.RegularPages "Type" "post"}}
+      {{ $paginator := .Paginate $pages }}
+
+        {{ range $paginator.Pages }}
+          <strong><a href="{{ .RelPermalink }}" style="text-decoration:none">{{ .LinkTitle }}</a></strong>
+          <br />
+        {{end}}
+
+
+    </section>
+    <footer class="page__meta">
+      {{ partial "footer.html" .}}
+    </footer>
+  </div>
+</article>
+{{ end }}

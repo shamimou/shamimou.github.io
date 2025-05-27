@@ -1,0 +1,162 @@
+<div class="sidebar sticky">
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    {{ $imgsrc := "images/profile.png"}}
+    {{ with  .Site.Params.Author.Picture}}
+    {{ $imgsrc = path.Join "images/" . }}
+    {{end}}
+    <img src="{{$imgsrc | relURL}}" alt="{{ .Site.Params.Author.Name }}">
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">{{ .Site.Params.Author.Name }}</h3>
+    {{ with .Site.Params.Author.Pronouns}}<p class="author__pronouns">{{ . }}</p>{{end}}
+    {{ with .Site.Params.Author.Bio}}<p class="author__bio">{{ . }}</p>{{end}}
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      {{with .Site.Params.Author.Location}}
+        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ . }}</li>
+      {{end}}
+      {{with .Site.Params.Author.Employer}}
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ . }}</li>
+      {{end}}
+      {{with .Site.Params.Author.Site}}
+        <li><a href="{{ . }}" target="_blank"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ . }}</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Mail}}
+        <li><a href="mailto:{{ . }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ . }}</a></li>
+      {{end}}
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+      {{with .Site.Params.Author.Arxiv}}
+        <li><a href="{{ . }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Google_scholar}}
+        <li><a href="{{ . }}"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Semantic}}
+        <li><a href="{{ . }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic Scholar</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Impactstory}}
+        <li><a href="{{ . }}"><i class="ai ai-impactstory ai-fw icon-pad-right"></i>Impactstory</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Orcid}}
+        <li><a href="{{ . }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Pubmed}}
+        <li><a href="{{ . }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
+      {{end}}
+      {{with .Site.Params.Author.ResearchGate}}
+        <li><a href="{{ . }}"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Scopus}}
+        <li><a href="{{ . }}"><i class="ai ai-scopus icon-pad-right"></i>Scopus</a></li>
+      {{end}}
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      {{with .Site.Params.Author.Bitbucket}}
+        <li><a href="https://bitbucket.org/{{ . }}" target="_blank"><i class="fab fa-fw fa-bitbucket icon-pad-right" aria-hidden="true"></i>Bitbucket</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Codepen}}
+        <li><a href="https://codepen.io/{{ . }}" target="_blank"><i class="fab fa-fw fa-codepen icon-pad-right" aria-hidden="true"></i>CodePen</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Dribbble}}
+        <li><a href="https://dribbble.com/{{ . }}" target="_blank"><i class="fab fa-fw fa-dribbble icon-pad-right" aria-hidden="true"></i>Dribbble</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Github}}
+        <li><a href="https://github.com/{{ . }}" target="_blank"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>{{.}}</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Gitlab}}
+        <li><a href="https://gitlab.com/{{ . }}" target="_blank"><i class="fab fa-fw fa-gitlab icon-pad-right" aria-hidden="true"></i>{{.}}</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Kaggle}}
+        <li><a href="https://kaggle.com/{{ . }}" target="_blank"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Stackoverflow}}
+        <li><a href="https://www.stackoverflow.com/users/{{ . }}" target="_blank"><i class="fab fa-fw fa-stack-overflow icon-pad-right" aria-hidden="true"></i>Stackoverflow</a></li>
+      {{end}}
+
+      <!-- Font Awesome icons / Social media -->
+      {{with .Site.Params.Author.Bluesky}}
+        <li><a href="https://bsky.app/profile/{{ . }}"><i class="fab fa-fw fa-bluesky icon-pad-right" aria-hidden="true"></i>Bluesky</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Facebook}}
+        <li><a href="https://www.facebook.com/{{ . }}"><i class="fab fa-fw fa-facebook-f icon-pad-right" aria-hidden="true"></i>Facebook</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Flickr}}
+        <li><a href="https://www.flickr.com/{{ . }}"><i class="fab fa-fw fa-flickr icon-pad-right" aria-hidden="true"></i>Flickr</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Foursquare}}
+        <li><a href="https://foursquare.com/{{ . }}"><i class="fab fa-fw fa-foursquare icon-pad-right" aria-hidden="true"></i>Foursquare</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Goodreads}}
+        <li><a href="https://www.goodreads.com/{{ . }}"><i class="fab fa-fw fa-goodreads icon-pad-right" aria-hidden="true"></i>Goodreads</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Google_plus}}
+        <li><a href="https://plus.google.com/+{{ . }}"><i class="fab fa-fw fa-google-plus-g icon-pad-right" aria-hidden="true"></i>Google+</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Keybase}}
+        <li><a href="https://keybase.io/{{ . }}"><i class="fas fa-fw fa-key icon-pad-right" aria-hidden="true"></i>Keybase</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Instagram}}
+        <li><a href="https://instagram.com/{{ . }}"><i class="fab fa-fw fa-instagram icon-pad-right" aria-hidden="true"></i>Instagram</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Lastfm}}
+        <li><a href="https://last.fm/user/{{ . }}"><i class="fab fa-fw fa-lastfm icon-pad-right" aria-hidden="true"></i>Last.fm</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Linkedin}}
+        <li><a href="https://www.linkedin.com/in/{{ . }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Mastodon}}
+        <li><a href="{{ . }}"><i class="fab fa-fw fa-mastodon icon-pad-right" aria-hidden="true"></i>Mastodon</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Medium}}
+        <li><a href="{{ . }}"><i class="fab fa-fw fa-medium icon-pad-right" aria-hidden="true"></i>Medium</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Pinterest}}
+        <li><a href="https://www.pinterest.com/{{ . }}"><i class="fab fa-fw fa-pinterest icon-pad-right" aria-hidden="true"></i>Pinterest</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Soundcloud}}
+        <li><a href="https://soundcloud.com/{{ . }}"><i class="fab fa-fw fa-soundcloud icon-pad-right" aria-hidden="true"></i>Soundcloud</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Steam}}
+        <li><a href="https://steamcommunity.com/id/{{ . }}"><i class="fab fa-fw fa-steam icon-pad-right" aria-hidden="true"></i>Steam</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Telegram}}
+        <li><a href="https://t.me/{{ . }}"><i class="fab fa-fw fa-telegram icon-pad-right" aria-hidden="true"></i>@{{.}}</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Tumblr}}
+        <li><a href="https://{{ . }}.tumblr.com"><i class="fab fa-fw fa-tumblr icon-pad-right" aria-hidden="true"></i>Tumblr</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Twitter}}
+        <li><a href="https://twitter.com/{{ . }}"><i class="fab fa-fw fa-x-twitter icon-pad-right" aria-hidden="true"></i>X (formerly Twitter)</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Vine}}
+        <li><a href="https://vine.co/u/{{ . }}"><i class="fab fa-fw fa-vine icon-pad-right" aria-hidden="true"></i>Vine</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Weibo}}
+        <li><a href="https://www.weibo.com/{{ . }}"><i class="fab fa-fw fa-weibo icon-pad-right" aria-hidden="true"></i>Weibo</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Wikipedia}}
+        <li><a href="https://en.wikipedia.org/wiki/User:{{ . }}"><i class="fab fa-fw fa-wikipedia-w icon-pad-right" aria-hidden="true"></i>Wikipedia</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Xing}}
+        <li><a href="https://www.xing.com/profile/{{ . }}"><i class="fab fa-fw fa-xing icon-pad-right" aria-hidden="true"></i>XING</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Youtube}}
+        <li><a href="https://www.youtube.com/@{{ . }}"><i class="fab fa-fw fa-youtube icon-pad-right" aria-hidden="true"></i>YouTube</a></li>
+      {{end}}
+      {{with .Site.Params.Author.Zhihu}}
+      <li><a href="https://www.zhihu.com/people/{{ . }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
+      {{end}}
+    </ul>
+  </div>
+</div>
+
+  </div>
