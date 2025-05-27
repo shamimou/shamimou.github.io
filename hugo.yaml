@@ -1,4 +1,4 @@
-baseURL: 'https://dtn-ou.gitlab.io'
+baseURL: 'https://mgpnata.github.io'
 languageCode: 'en-us'
 title: 'DTNOU - Site'
 theme: 'dtnou-hugo'
@@ -7,28 +7,29 @@ markup:
   highlight:
     style: friendly
 
+
 menus:
   main:
     - name: CV
       pageRef: /cv
       weight: 10
-    - name: Publications
-      pageRef: /publications
-      weight: 20
     - name: Research
       pageRef: /research
+      weight: 20
+    - name: Publications
+      pageRef: /publications
       weight: 30
-    - name: Posts
-      pageRef: /posts/
+    # - name: Posts
+    #   pageRef: /posts/
+    #   weight: 40
+    - name: Joinus
+      pageRef: /joinus/
       weight: 40
-    - name: Use This template
-      pageRef: /posts/howto
-      weight: 50
 
 
 params:
   author:
-    name: 'DTN OU'
+    name: 'Mega'
     location: 'Japan'
     #pronouns:
     bio: "PhD Students at Okayama University"

@@ -1,22 +1,24 @@
 ---
-title: CV/About Me
-url: cv
 layout: cv
+title: CV / About Me
+url: cv
 draft: false
 ---
-# Academics
-- Phd Students at Okayama Unviersity
-- Master at Master University
-- Bsc at Bsc University
 
-# Work experience
-- xxx
-  - yyy
-  - zzz
-- xx1
-  - yy1
+# Education
+- S1
 
-# Skills
-- Skill 1
-- Skill 2
-  - Sub Skill
+# Working experience
+- Working
+
+# Awards
+- Awards
+
+# Scholarships
+- Scholarships
+
+# Certifications
+- Certificate
+
+# Trainings
+- Training
