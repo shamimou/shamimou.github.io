@@ -12,3 +12,5 @@ My Research interests is :
 - two
 
 ## Skill
+- Skills 1
+- skill2 
