@@ -48,7 +48,8 @@ jobs:
 
       - name: Update submodules manually
         run: git submodule update --init --recursive
-
+      - name: debug
+        run: ls -l themes
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
