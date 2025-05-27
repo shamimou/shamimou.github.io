@@ -4174,6 +4174,120 @@ select:focus {
   text-decoration: underline;
 }
 
+.lab__members-wrapper {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  z-index: 10;
+  position: relative;
+  cursor: pointer;
+}
+
+.lab__members-wrapper li:last-child a {
+  margin-bottom: 0;
+}
+
+@media (min-width: 57.8125em) {
+  .lab__members-wrapper {
+    display: block;
+  }
+}
+
+.lab__members-wrapper button {
+  margin-bottom: 0;
+}
+
+@media (min-width: 57.8125em) {
+  .lab__members-wrapper button {
+    display: none;
+  }
+}
+
+.lab__members__urls {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+  padding: 10px;
+  list-style-type: none;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  background: var(--global-bg-color);
+  z-index: -1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  cursor: default;
+}
+
+@media (min-width: 57.8125em) {
+  .lab__members__urls {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.lab__members__urls:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: calc(50% - 10px);
+  width: 0;
+  border-style: solid;
+  border-width: 0 10px 10px;
+  border-color: var(--global-border-color) transparent;
+  z-index: 0;
+}
+
+@media (min-width: 57.8125em) {
+  .lab__members__urls:before {
+    display: none;
+  }
+}
+
+.lab__members__urls:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 10px);
+  width: 0;
+  border-style: solid;
+  border-width: 0 10px 10px;
+  border-color: #fff transparent;
+  z-index: 1;
+}
+
+@media (min-width: 57.8125em) {
+  .lab__members__urls:after {
+    display: none;
+  }
+}
+
+.lab__members__urls li {
+  white-space: nowrap;
+}
+
+.lab__members__urls a {
+  display: block;
+  margin-bottom: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: inherit;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.lab__members__urls a:hover {
+  text-decoration: underline;
+}
+
 /*!
  * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
