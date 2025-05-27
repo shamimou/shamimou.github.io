@@ -50,7 +50,6 @@ jobs:
         run: git submodule update --init --recursive
       - name: debug
         run: ls -l
-        run: pwd
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
