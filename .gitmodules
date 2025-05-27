@@ -1,0 +1,3 @@
+[submodule "themes/dtnou-hugo"]
+	path = themes/dtnou-hugo
+	url = git@gitlab.com:dtn-ou/dtnou-hugo.git
