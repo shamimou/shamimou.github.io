@@ -49,9 +49,7 @@ jobs:
       # - name: Update submodules manually
       #   run: git submodule update --remote
       - name: Update submodules to specified branch
-        run: |
-          git submodule sync --recursive
-          git submodule update --remote --recursive
+        run: git submodule update --remote --recursive
       - name: debug
         run: ls -l themes/dtnou-hugo
       - name: Setup Pages
