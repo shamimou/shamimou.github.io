@@ -46,8 +46,8 @@ jobs:
       # - name: Show .gitmodules contents
       #   run: cat .gitmodules
       #
-      # - name: Update submodules manually
-      #   run: git submodule update --init --recursive
+      - name: Update submodules manually
+        run: git submodule update --remote
       - name: debug
         run: ls -l themes/dtnou-hugo
       - name: Setup Pages
