@@ -42,7 +42,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: recursive remote
       # - name: Show .gitmodules contents
       #   run: cat .gitmodules
       #
