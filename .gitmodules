@@ -1,4 +1,4 @@
 [submodule "themes/dtnou-hugo"]
 	path = themes/dtnou-hugo
 	url = https://gitlab.com/dtn-ou/dtnou-hugo.git
-	branch = "0.146"
+	branch = 0.146
