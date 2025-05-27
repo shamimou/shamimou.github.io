@@ -32,7 +32,7 @@ params:
     name: 'Mega'
     location: 'Japan'
     #pronouns:
-    bio: "PhD Students at Okayama University"
+    bio: "(D1)"
     employer: 'Okayama University'
     #picture: 'profile.png'
     site: 'https://dtn-ou.gitlab.io'
