@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/howto/</loc>
+    <loc>https://mgpnata.github.io/posts/howto/</loc>
     <lastmod>2025-03-13T15:24:57+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-11T12:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://mgpnata.github.io/</loc>
     <lastmod>2025-01-30T03:36:57-08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://mgpnata.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/cv/</loc>
+    <loc>https://mgpnata.github.io/cv/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://mgpnata.github.io/joinus/</loc>
+  </url><url>
+    <loc>https://mgpnata.github.io/publications/</loc>
+  </url><url>
+    <loc>https://mgpnata.github.io/research/</loc>
+  </url><url>
+    <loc>https://mgpnata.github.io/tags/</loc>
   </url>
 </urlset>

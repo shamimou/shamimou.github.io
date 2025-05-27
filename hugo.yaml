@@ -3,11 +3,6 @@ languageCode: 'en-us'
 title: 'DTNOU - Site'
 theme: 'dtnou-hugo'
 
-module:
-  imports:
-    - path: "https://gitlab.com/dtn-ou/dtnou-hugo"
-      disable: false
-
 markup:
   highlight:
     style: friendly
