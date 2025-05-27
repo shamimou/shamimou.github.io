@@ -45,6 +45,10 @@ jobs:
           submodules: recursive
       - name: Show .gitmodules contents
         run: cat .gitmodules
+
+      - name: Update submodules manually
+        run: git submodule update --init --recursive
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
