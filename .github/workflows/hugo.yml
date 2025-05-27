@@ -43,13 +43,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-      - name: Show .gitmodules contents
-        run: cat .gitmodules
-
-      - name: Update submodules manually
-        run: git submodule update --init --recursive
-      - name: debug
-        run: ls -l
+      # - name: Show .gitmodules contents
+      #   run: cat .gitmodules
+      #
+      # - name: Update submodules manually
+      #   run: git submodule update --init --recursive
+      # - name: debug
+      #   run: ls -l
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

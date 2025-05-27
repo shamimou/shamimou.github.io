@@ -1,4 +1,0 @@
-module:
-  imports:
-    - path: "gitlab.com/dtn-ou/dtnou-hugo"
-      disable: false
