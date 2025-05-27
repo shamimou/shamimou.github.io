@@ -1,5 +1,4 @@
 ---
-layout: cv
 title: CV / About Me
 url: cv
 draft: false
