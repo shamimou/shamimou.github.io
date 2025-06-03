@@ -29,25 +29,25 @@ menus:
 
 params:
   author:
-    name: 'Mega'
+    name: 'S M SHAMIM'
     location: 'Japan'
     #pronouns:
-    bio: "(D1)"
+    bio: "(D2)"
     employer:
       name: 'Okayama University'
       link: 'https://www.okayama-u.ac.jp'
     #picture: 'profile.png'
     site: 'https://dtn-ou.gitlab.io'
-    mail: 'mpranata@s.okayama-u.ac.jp'
+    mail: 'shamim@s.okayama-u.ac.jp'
     # Full Link
-    # google_scholar: 'https://scholar.google.com/citations?user=000000000000&hl=en'
-    # scopus: 'https://www.scopus.com/authid/detail.uri?authorId=00000000000'
+    # google_scholar: 'https://scholar.google.com/citations?user=lee3ye8AAAAJ&hl=en'
+    # scopus: 
     #arxiv:
-    #orcid:
+    #orcid: 'https://orcid.org/0000-0003-0062-0421'
     #semantic:
     #impactstory:
     #pubmed:
-    #researchgate:
+    #researchgate: 'https://www.researchgate.net/profile/S-M-Shamim'
     #mastodon:
     #medium:
 
@@ -55,8 +55,8 @@ params:
     #bitbucket:
     #codepen:
     #dribbble:
-    github: 'mgpnata'
-    #gitlab: 'dtn-ou'
+    github: 'shamimou'
+    #gitlab: ''
     #kaggle:
     #stackoverflow:
     #bluesky:
