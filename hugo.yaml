@@ -33,7 +33,9 @@ params:
     location: 'Japan'
     #pronouns:
     bio: "(D1)"
-    employer: 'Okayama University'
+    employer:
+      name: 'Okayama University'
+      link: 'https://www.okayama-u.ac.jp'
     #picture: 'profile.png'
     site: 'https://dtn-ou.gitlab.io'
     mail: 'mpranata@s.okayama-u.ac.jp'
@@ -79,3 +81,14 @@ params:
     #xing:
     #youtube:
     #zhihu:
+  labs:
+    name: 'Information Security Lab'
+    name_sort: 'ISEC'
+    link: 'https://isec'
+    members:
+      - name: 'Yasuyuki NOGAMI'
+        link: 'https://isec.ec.okayama-u.ac.jp/home/nogami/index.html'
+      - name: 'Yuta KODERA'
+        link: 'https://isec.ec.okayama-u.ac.jp/home/kodera/'
+      - name: 'Samsul HUDA'
+        link: 'https://sites.google.com/s.okayama-u.ac.jp/huda'
